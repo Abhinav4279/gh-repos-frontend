@@ -15,7 +15,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = 'https://gh-repos-backend.onrender.com';
+  private apiUrl = 'https://gh-repos-backend.onrender.com/';
 
   constructor(private http: HttpClient) { }
 
