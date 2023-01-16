@@ -5,6 +5,7 @@ export interface User {
   bio?: string;
   twitter?: string;
   blog?: string;
+  html_url?: string;
 }
 
 //name, avatar_url, location, bio, twitter, blog

@@ -1,4 +1,15 @@
-<p>{{user.name}}</p>
+<div class="card col user-card">
+  <img class="avatar" src={{user.avatar_url}} alt="avatar">
+  <div>
+    <h2 class="primary-col">{{user.name}}</h2>
+    <p>📍 &nbsp; {{user.location}}</p>
+    <p>{{user.bio}}</p>
+    <p>{{user.twitter}}</p>
+    <a href={{user.blog}}>{{user.blog}}</a>
+    <a href={{user.html_url}}>{{user.html_url}}</a>
+  </div>
+</div>
+
 <div class="content">
   <app-repo-item
     *ngFor="let repo of repos"
