@@ -3,7 +3,6 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from '../User';
 import {Repo} from '../Repo'
-import { environment } from '../../environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -16,7 +15,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = environment.apiUrl;
+  private apiUrl = 'https://gh-repos-backend.onrender.com';
 
   constructor(private http: HttpClient) { }
 
