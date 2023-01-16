@@ -10,6 +10,6 @@
   <div *ngIf="not_found" class="card highlight-card card-small welcome">
     <span>Enter valid username to start your search 🧐 </span>
   </div>
-  <p *ngIf="loading">Loading...</p>
+  <mat-spinner *ngIf="loading" />
   <app-user *ngIf="!not_found && !loading" [user]="user"></app-user>
 </main>
