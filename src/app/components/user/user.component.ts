@@ -1,19 +1,25 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { UserService } from '../../services/user.service';
+import { User } from '../../User';
+
 
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
-  styleUrls: ['./user.component.scss']
+  styleUrls: ['./user.component.scss'],
 })
 export class UserComponent implements OnInit {
-  @Input() username: string = '';
-  not_found = true;
-  user = {};
+  @Input() user: User = {};
+  // @Input() repos: ;
 
-  constructor(private repoService: UserService) {}
+  constructor() {
+    console.log(this.user);
+  }
 
   ngOnInit(): void {
-    this.repoService.getUser().subscribe((user) => (this.user = user));
+    
+  }
+
+  ngOnChanges(){
+      console.log(this.user);
   }
 }

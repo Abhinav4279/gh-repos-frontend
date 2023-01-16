@@ -3,9 +3,12 @@
   <span> &nbsp; Github Repos</span>
   <span class="example-spacer"></span>
   <input class="search" type="text" title="Search" name="username" [(ngModel)]="username" placeholder="Username" value="username">
-  <button class="search search-btn"><mat-icon fontIcon="search"/></button>
+  <button class="search search-btn" (click)="onSearch()"><mat-icon fontIcon="search"/></button>
 </mat-toolbar>
 
 <main class="content">
-  <app-user [username]="username"></app-user>
+  <div *ngIf="not_found" class="card highlight-card card-small welcome">
+    <span>Enter valid username to start your search 🧐 </span>
+  </div>
+  <app-user [user]="user"></app-user>
 </main>
