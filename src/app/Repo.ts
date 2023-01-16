@@ -1,7 +1,8 @@
 export interface Repo {
   name?: string;
   description?: string;
-  languages?: Object;
+  language?: string;
+  html_url?: string;
 }
 
 //name, description, languages

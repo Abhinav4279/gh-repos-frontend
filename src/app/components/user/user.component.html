@@ -1,5 +1,7 @@
 <p>{{user.name}}</p>
-<app-repo-item
-  *ngFor="let repo of repos"
-  [repo]="repo"
-></app-repo-item>
+<div class="content">
+  <app-repo-item
+    *ngFor="let repo of repos"
+    [repo]="repo"
+  ></app-repo-item>
+</div>
