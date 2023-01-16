@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from '../User';
 import {Repo} from '../Repo'
+import { environment } from '../../environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -15,7 +16,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = 'http://localhost:5000/';
+  private apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 
