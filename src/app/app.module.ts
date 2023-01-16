@@ -12,11 +12,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserComponent } from './components/user/user.component';
+import { RepoItemComponent } from './repo-item/repo-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    UserComponent,
+    RepoItemComponent
   ],
   imports: [
     BrowserModule,

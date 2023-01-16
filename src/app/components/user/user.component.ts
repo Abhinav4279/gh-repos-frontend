@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { User } from '../../User';
+import { Repo } from 'src/app/Repo';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { User } from '../../User';
 })
 export class UserComponent implements OnInit {
   @Input() user: User = {};
-  // @Input() repos: ;
+  @Input() repos: Repo[] = [];
 
   constructor() {}
 
