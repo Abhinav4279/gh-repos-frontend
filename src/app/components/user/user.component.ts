@@ -11,15 +11,7 @@ export class UserComponent implements OnInit {
   @Input() user: User = {};
   // @Input() repos: ;
 
-  constructor() {
-    console.log(this.user);
-  }
+  constructor() {}
 
-  ngOnInit(): void {
-    
-  }
-
-  ngOnChanges(){
-      console.log(this.user);
-  }
+  ngOnInit(): void {}
 }
