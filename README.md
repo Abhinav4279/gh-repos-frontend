@@ -1,6 +1,6 @@
 # Github Repos Frontend
 
-Angular web-app to query and get repository details of github users.\
+Angular web-app to query and get repository details of github users.
 
 ## Contribute
 ### Installation
