@@ -16,6 +16,7 @@ const httpOptions = {
 })
 export class UserService {
   private apiUrl = 'https://gh-repos-backend.onrender.com/';
+  private testUrl = 'http://localhost:5000/';
 
   constructor(private http: HttpClient) { }
 

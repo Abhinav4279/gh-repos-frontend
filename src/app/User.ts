@@ -3,7 +3,7 @@ export interface User {
   avatar_url?: string;
   location?: string;
   bio?: string;
-  twitter?: string;
+  twitter_username?: string;
   blog?: string;
   html_url?: string;
 }
