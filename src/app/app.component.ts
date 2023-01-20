@@ -37,7 +37,7 @@ export class AppComponent {
                             err => {
                               console.log(err);
                             });
-}
+  }
 
   ngOnDestroy() {
     // Unsubscribe to ensure no memory leaks

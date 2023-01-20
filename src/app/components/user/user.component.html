@@ -12,7 +12,12 @@
 
 <div class="content">
   <app-repo-item
-    *ngFor="let repo of repos"
+    *ngFor="let repo of page_repos"
     [repo]="repo"
   ></app-repo-item>
 </div>
+<mat-paginator class="content"
+  [length]="repos_count"
+  [pageSize]="9"
+  (page)="onPageChange($event)"
+></mat-paginator>

@@ -16,12 +16,11 @@ const httpOptions = {
 })
 export class UserService {
   private apiUrl = 'https://gh-repos-backend.onrender.com/';
-  private testUrl = 'http://localhost:5000/';
+  // private apiUrl = 'http://localhost:4279/';
 
   constructor(private http: HttpClient) { }
 
   getUser(username: string): Observable<User> {
-    console.log(username);
     httpOptions.params = new HttpParams({fromObject: {"username": username}});
     return this.http.get<User>(this.apiUrl + 'user', httpOptions);
   }
