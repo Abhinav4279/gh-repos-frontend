@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Repo } from '../Repo';
+import { Repo } from '../../Repo';
 
 @Component({
   selector: 'app-repo-item',
