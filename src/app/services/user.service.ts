@@ -15,8 +15,8 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = 'https://gh-repos-backend.onrender.com/';
-  // private apiUrl = 'http://localhost:4279/';
+  private apiUrl = 'https://good-erin-python-sari.cyclic.app/';
+  // private apiUrl = 'http://localhost:5000/';
 
   constructor(private http: HttpClient) { }
 
