@@ -18,3 +18,6 @@ ng serve
 ```bash
 ng build
 ```
+
+## Screenshot
+![gh-repos](https://github.com/Abhinav4279/gh-repos-frontend/assets/54229503/8f821f36-9567-4567-bcad-5bc6985279af)
